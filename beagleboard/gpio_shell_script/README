@@ -5,4 +5,7 @@ To blink one of the onboard LEDs, try:
 
   ./strobe_gpio 149 
 
-For more information, see the Make blog post: TK
+For more information, see the Make blog post: 
+
+  http://blog.makezine.com/archive/2009/02/blinking_leds_with_the_beagle_board.html
+
