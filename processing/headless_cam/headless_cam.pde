@@ -47,15 +47,10 @@ void draw() {
          if (faceBox.x + faceBox.width > width) { faceBox.width = width - faceBox.x; }
          if (faceBox.y < 0) { faceBox.y = 0; }
          if (faceBox.y + faceBox.height >  height) { faceBox.height = height - faceBox.y; }
-         //Now replace the pixels insode the faceBox with the same pixels, but this
-         //time take from the origina background image.  This makes everything inside the box
-         //appear to disappear.
-         for (int y = faceBox.y; y < (faceBox.y + faceBox.height); y++) {
-            for (int x = faceBox.x; x < (faceBox.x + faceBox.width); x++) {
-              int loc = x + y * width;  //Nice little forumla from Daniel Shiffman
-              fg.pixels[loc] =  bg.pixels[loc];
-           }
-         }
+         //Now replace the foreground image of the face with the same positions in the background
+         fg.loadPixels();
+         fg.copy(bg, faceBox.x, faceBox.y, faceBox.height, faceBox.width,  faceBox.x, faceBox.y, faceBox.height, faceBox.width);
+         fg.updatePixels();
       }
       fg.updatePixels();
       image(fg,0,0);
