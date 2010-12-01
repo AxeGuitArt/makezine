@@ -1,4 +1,3 @@
-// This script writes a simple log file for a
 <?php
    $fn = "sensor_log.txt";
    if (file_exists($fn)) {
