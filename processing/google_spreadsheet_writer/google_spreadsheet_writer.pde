@@ -71,9 +71,9 @@ void setup() {
   }
 }
 
-//Reads the port everye few seconds and sends the data back to Google
+//Reads the port every few seconds and sends the data back to Google
 void draw() {
-  float val = "0.0";
+  float val = 0.0;
   if (port.available() > 0) { // If data is available,
     val = port.read();        // read it and store it in val
   }
