@@ -1,0 +1,5 @@
+Snail Mail Push Alerts
+
+This project sends push notifications from an Arduino to an iPhone using the Prowl API. For more information about this project, please see:
+
+http://blog.makezine.com/archive/2010/12/snail_mail_push_alerts.html
