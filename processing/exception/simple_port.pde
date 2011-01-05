@@ -1,10 +1,14 @@
 import processing.serial.*;
 
-//Variables for writing sensor data
 Serial port;  // Create object from Serial class
+
+
+//Used for the timer variables
 int oldTime;  //timer variable
 int reportingInterval = 1000;  //Number of miliiseconds between when sensor data is recorded
-int idx = 0;  // Index that counts the number of iterations so far
+
+int idx = 0;  // Index that counts the number of reporting periods that have elapsed
+float val = 0.0;  // The value read from the port
 
 
 void setup() {
@@ -19,7 +23,7 @@ void setup() {
 
 // Reads the port
 void readPort() {
-  float val = 0.0;
+  val = 0.0;
   if (port.available() > 0) { // If data is available,
     val = port.read();        // read it and store it in val
   }
@@ -32,7 +36,7 @@ void readPort() {
 
 void draw() {
   background(0);
-  text(idx, width/2, height/2);
+  text(idx + ": " + val, width/2, height/2);
   readPort();
 }
 
