@@ -33,8 +33,8 @@ void draw() {
   if (!arduinoOK) {  
      text("No arduino!", 10, height/2);
      println(Serial.list());
-     String arduinoPort = Serial.list()[0];  
      try {
+        String arduinoPort = Serial.list()[0];  
         port = new Serial(this, arduinoPort, 9600);
         arduinoOK = true;
      } catch (Exception e) {
