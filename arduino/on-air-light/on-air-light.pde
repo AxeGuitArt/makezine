@@ -1,4 +1,4 @@
-// Arduino Code for "On Air" Light
+// Arduino Code for Networked On Air Light by Matt Richardson
 // Be sure to enter your Ustream API key into appropriate line below.
 // Requires XBee Internet Gateway
 
@@ -14,7 +14,7 @@ void setup () {
 }
 
 void loop() {
-  Serial.println("http://api.ustream.tv/json/channel/make-live/getValueOf/status?key=USTREAM_API_HERE!");
+  Serial.println("http://api.ustream.tv/json/channel/make-live/getValueOf/status?key=USTREAM_API_KEY_HERE");
   delay(3000);
   if (Serial.available() > 0) //If there is at least one char in the serial buffer
     {
