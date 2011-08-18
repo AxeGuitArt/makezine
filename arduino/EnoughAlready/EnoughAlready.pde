@@ -3,6 +3,9 @@ Enough Already
 Matt Richardson, 2011
 Monitors the NTSC closed captioning text track and mutes the TV when a keyword is caught.
 
+More information about this project is here:
+http://blog.makezine.com/archive/2011/08/enough-already-the-arduino-solution-to-overexposed-celebs.html
+
 This code is mostly from Nootropic Design's Video Experimenter Shield
 closed captioning example:
 http://nootropicdesign.com/projectlab/2011/03/20/decoding-closed-captioning/
