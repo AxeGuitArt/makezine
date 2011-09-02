@@ -56,7 +56,7 @@ int IRledPin =  13;
 unsigned long muteUntil = 0;
 boolean muted = false;
 
-long muteTime 30000; // time, in milliseconds to mute
+long muteTime = 30000; // time, in milliseconds to mute
 
 
 void setup()  {
