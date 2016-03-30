@@ -1,0 +1,1 @@
+Void your warranty, violate a user agreement, fry a circuit, blow a fuse, poke an eye out. Make: The risk-takers, the doers, the makers of things... Here are sample programs that have been featured in articles on [the Make Blog](http://blog.makezine.com)!
